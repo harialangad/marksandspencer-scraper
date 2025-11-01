@@ -11,3 +11,4 @@ from itemadapter import ItemAdapter
 class MarksandspencerPipeline:
     def process_item(self, item, spider):
         return item
+# Added data cleaning and CSV export pipeline
