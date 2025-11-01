@@ -33,3 +33,4 @@ class MarksandspencerSpider(scrapy.Spider):
             "description": " ".join(response.css('div[data-test-id="product-description"] *::text, section[class*="Description"] *::text').getall()).strip(),
             "image_urls": response.css('img::attr(src)').getall(),
         }
+# Spider implemented for Marks & Spencer product scraping
